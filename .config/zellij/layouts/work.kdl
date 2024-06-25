@@ -1,0 +1,35 @@
+layout {
+  tab name="Local Builds" focus=true cwd="~/Development/Scripts" {
+      pane command="~/Development/Scripts/test.sh" start_suspended=true
+  }
+
+  tab name="Catalog" cwd="~/Development/Company/project1-common" {
+      pane name="project1-common" command="fish"
+  }
+
+  tab name="Project2" cwd="~/Development/Company/project2-android" {
+      pane name="project2-android" command="fish"
+  }
+
+  tab name="Project3" cwd="~/Development/Company/project3-android" {
+      pane name="project3-android" command="fish"
+  }
+
+  tab name="project6" cwd="~/Development/Company/project6-android" {
+      pane name="project6-android" command="fish"
+  }
+
+  tab name="Project7" cwd="~/Development/Company/project7-android" {
+      pane name="project7-android" command="fish"
+  }
+
+  default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+  }
+}
