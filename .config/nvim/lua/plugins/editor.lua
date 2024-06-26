@@ -1,4 +1,3 @@
-martin.morales@MX-IT06123 plugins % cat editor.lua
 -- https://github.com/craftzdog/dotfiles-public/blob/master/.config/nvim/lua/plugins/editor.lua
 
 return {
